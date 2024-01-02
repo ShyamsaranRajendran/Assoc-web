@@ -1,0 +1,27 @@
+/* public/styles/footer.css */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+/* Styles for social media logos */
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+/* Add styles for your footer content */
+footer p {
+    margin: 10px 0;
+}

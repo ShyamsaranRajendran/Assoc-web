@@ -1,0 +1,36 @@
+<!-- views/layouts/footer.ejs -->
+<head>
+  <!-- ... (other head elements) -->
+  <link rel="stylesheet" href="/styles/footer.css">
+  <script>
+    function imageClickHandler(imageType) {
+      const socialMediaLinks = [
+        { type: 'instagram', url: 'https://www.instagram.com/' },
+        { type: 'facebook', url: 'https://www.facebook.com/' },
+        { type: 'twitter', url: 'https://twitter.com/' },
+        { type: 'youtube', url: 'https://www.youtube.com/' }
+      ];
+
+      const socialMedia = socialMediaLinks.find(link => link.type.toLowerCase() === imageType.toLowerCase());
+
+      if (socialMedia) {
+        // Redirect to the determined URL
+        window.location.href = socialMedia.url;
+      } else {
+        console.log(`No redirect URL defined for ${imageType} logo`);
+      }
+    }
+  </script>
+</head>
+
+<footer>
+  <!-- Your footer content here -->
+  <p>
+    <b>Follow us @</b>
+    <img src="/images/instagram-logo.png" alt="Instagram Logo" onclick="imageClickHandler('Instagram')">
+    <img src="/images/facebook-logo.png" alt="Facebook Logo" onclick="imageClickHandler('Facebook')">
+    <img src="/images/twitter-logo.png" alt="Twitter Logo" onclick="imageClickHandler('Twitter')">
+    <img src="/images/youtube-logo.png" alt="YouTube Logo" onclick="imageClickHandler('YouTube')">
+  </p>
+  <p>Designed and Maintained by ShyamSaran R</p>
+</footer>

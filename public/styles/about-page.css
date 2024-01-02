@@ -1,0 +1,63 @@
+/* public/styles/about-page.css */
+
+.header-container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+.row {
+  display: flex;
+}
+.col-sm-6 {
+  flex: 1;
+  padding: 20px;
+}
+.col-sm-6:nth-child(odd) {
+  background-color: lavender;
+}
+.col-sm-6:nth-child(even) {
+  background-color: lavenderblush;
+}
+/* public/styles/members.css */
+.members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.card:hover .card-content {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.card-content h3,
+.card-content p {
+  margin: 0;
+}

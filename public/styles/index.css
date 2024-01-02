@@ -1,0 +1,9 @@
+.div-body{
+    display: flex;
+    width: 1440px;
+    height: 1024px;
+    padding: 20px 35px;
+    flex-direction: column;
+    align-items: flex-start; 
+    background: linear-gradient(114deg,#1E54E0,15%,#2AE4CE,69.24%);
+}
